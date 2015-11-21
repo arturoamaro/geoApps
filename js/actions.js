@@ -1,6 +1,6 @@
 var fn={
     ready: function(){
-      document.addEventListener("deviceready",fn.ini,"false");  
+      //document.addEventListener("deviceready",fn.ini,"false");  
         document.addEventListener("deviceready",geo.getPosition,"false");  
     },
     init: function() {
@@ -11,7 +11,7 @@ var fn={
     drawMap: function(lat, lng){
         var latlng = new google.maps.LatLng(lat, lng);
         var myOptions = {
-            zoom: 14,
+            zoom: 16,
             center: latlng,
             mapTypeId: google.maps.MapTypeId.ROADMAP
         };
